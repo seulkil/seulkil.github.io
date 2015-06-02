@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Bookkeeping</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="forget">Forgot Password?</string>
+
+    <string name="statistic">Statistic</string>
+    <string name="record">Record</string>
+    <string name="plan">Plan</string>
+    <string name="menu">Menu</string>
+    <string name="edit">Edit</string>
+    <string name="childList">ChildList</string>
+    <string name="recordActivity">Record Activity</string>
+    <string name="saveActivity">Save for your Wish</string>
+    <string name="makeWishActivity">Make a Wish</string>
+    <string name="deleteWishActivity">Delete the Wish</string>
+    <string name="submit">Submit</string>
+    <string name="signUp">SignUp</string>
+    <string name="login">LogIn</string>
+    <string name="logout">Logout</string>
+
+    <string name="content_spend">Activity</string>
+    <string name="income">income</string>
+    <string name="bill">Pay</string>
+    <string name="wishlist">Wish</string>
+    <string name="childrenlist">Children List</string>
+    <string name="recordlist">Records </string>
+    <string name="wishitem">Wish Item : </string>
+
+    <string name="wish">Write your wish item </string>
+
+    <string name="amount">Amount of money you spend</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="askWho">Are You a Parent?</string>
+
+    <string name="userName">EmailAddress :</string>
+    <string name="userPassword">Password :</string>
+
+    <string name="add">add a child</string>
+    <string name="name">Name : </string>
+    <string name="date">Date : </string>
+    <string name="type">Type : </string>
+    <string name="content">Content : </string>
+    <string name="price">Price :   </string>
+    <string name="saved">Money you saved :   </string>
+    <string name="remain">Need to save :   </string>
+    <string name="balance">Current Balance:   </string>
+</resources>

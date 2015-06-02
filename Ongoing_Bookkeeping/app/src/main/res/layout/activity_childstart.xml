@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/beige">
+
+
+    <RelativeLayout
+        android:id= "@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/brown">
+
+        <TextView
+            android:text="@string/logout"
+            android:id="@+id/logout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/beige"
+            android:textSize="30dp"
+            android:onClick="logoutButton"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/statisticButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/statistic"
+        android:layout_marginTop="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_button2"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/record"
+        android:layout_below="@+id/statisticButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_button1"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/planButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plan"
+        android:layout_below="@+id/recordButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_button2"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

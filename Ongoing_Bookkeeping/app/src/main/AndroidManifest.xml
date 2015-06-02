@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bookkeeping.ongoing.ongoing_bookkeeping">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--<uses-sdk-->
+        <!--android:minSdkVersion="15"-->
+        <!--android:targetSdkVersion="21" />-->
+    <application
+        android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.user.App"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.user.LoginActivity" android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.user.RegisterActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.StartingActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.AddingchildAcitivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.Statistic_Activity"
+            android:label="Statistic"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.Plan_Activity"
+            android:label="Plan"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.Record_Activity"
+            android:label="Record"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.Recording_Activity"
+            android:label="Recording"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.Wish_Activity"
+            android:label="Wish"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.ChildstartActivity"
+            android:label="Wish"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.ViewChildActivity"
+            android:label="Wish"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.ViewChildWishActivity"
+            android:label="Wish"></activity>
+        <activity android:name="com.bookkeeping.ongoing.ongoing_bookkeeping.user.forgetActivity"
+            android:label="Wish"></activity>
+
+
+    </application>
+
+</manifest>
