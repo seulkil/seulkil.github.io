@@ -1,5 +1,5 @@
 /*
-	Strongly Typed by HTML5 UP
+	Telephasic by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -24,19 +24,54 @@
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-	.button, .box.excerpt .date {
+/* Promo */
+
+	#promo {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Sections/Article */
+/* Section/Article */
 
-	section > .last-child, section.last-child, article > .last-child, article.last-child {
+	section > .last-child,
+	article > .last-child,
+	section.last-child,
+	article.last-child {
 		margin-bottom: 0;
 	}
 
 /* Wrappers */
 
-	#banner-wrapper .inner {
+	#promo-wrapper {
+		background: url("../../images/promo.jpg");
+		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
+
+/* Header */
+
+	#logo a {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Nav */
+
+	#nav > ul > li > span, #nav > ul > li > a {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+	.dropotron {
+		position: relative;
+		box-shadow: none !important;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.dropotron.level-0 {
+			box-shadow: none !important;
+		}
+
+			.dropotron.level-0:before {
+				display: none;
+			}

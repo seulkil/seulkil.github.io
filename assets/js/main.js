@@ -1,24 +1,18 @@
 /*
-	Strongly Typed by HTML5 UP
+	Telephasic by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	skel
-		.breakpoints({
-			desktop: '(min-width: 737px)',
-			tablet: '(min-width: 737px) and (max-width: 1200px)',
-			mobile: '(max-width: 736px)'
-		})
-		.viewport({
-			breakpoints: {
-				tablet: {
-					width: 1080
-				}
-			}
-		});
+	skel.breakpoints({
+		normal: '(max-width: 1280px)',
+		narrow: '(max-width: 1080px)',
+		narrower: '(max-width: 820px)',
+		mobile: '(max-width: 736px)',
+		mobilep: '(max-width: 480px)'
+	});
 
 	$(function() {
 
@@ -35,11 +29,11 @@
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
+		// Prioritize "important" elements on narrower.
+			skel.on('+narrower -narrower', function() {
 				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
+					'.important\\28 narrower\\29',
+					skel.breakpoint('narrower').active
 				);
 			});
 
@@ -50,16 +44,16 @@
 		// Dropdowns.
 			$('#nav > ul').dropotron({
 				mode: 'fade',
-				noOpenerFade: true,
-				hoverDelay: 150,
-				hideDelay: 350
+				speed: 300,
+				alignment: 'center',
+				noOpenerFade: true
 			});
 
 		// Off-Canvas Navigation.
 
-			// Title Bar.
+			// Navigation Button.
 				$(
-					'<div id="titleBar">' +
+					'<div id="navButton">' +
 						'<a href="#navPanel" class="toggle"></a>' +
 					'</div>'
 				)
@@ -69,6 +63,7 @@
 				$(
 					'<div id="navPanel">' +
 						'<nav>' +
+							'<a href="index.html" class="link depth-0">Home</a>' +
 							$('#nav').navList() +
 						'</nav>' +
 					'</div>'
@@ -77,17 +72,16 @@
 					.panel({
 						delay: 500,
 						hideOnClick: true,
-						hideOnSwipe: true,
 						resetScroll: true,
 						resetForms: true,
-						side: 'left',
+						side: 'top',
 						target: $body,
 						visibleClass: 'navPanel-visible'
 					});
 
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#titleBar, #navPanel, #page-wrapper')
+					$('#navButton, #navPanel, #page-wrapper')
 						.css('transition', 'none');
 
 	});
